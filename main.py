@@ -19,14 +19,10 @@ def view():
 
 @app.route("/signup", methods= ['POST'])
 def validate():
-    username = cgi.escape(
-        request.form['username'])
-    password = cgi.escape(
-        request.form['password'])
-    Confirmpass = cgi.escape(
-        request.form['verify'])
-    email = cgi.escape(
-        request.form['email'])
+    username = cgi.escape(request.form['username'])
+    password = cgi.escape(request.form['password'])
+    Confirmpass = cgi.escape(request.form['verify'])
+    email = cgi.escape(request.form['email'])
 
     usernameEr = ""
     passwordEr = ""
